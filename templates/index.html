@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Home</title>
+</head>
+<body class="background">
+    {% if username %}
+        <h1 class="primary">Hello, {{ username }}!</h1>
+        <p class="textcolor">Your current balance is ${{ money }}.</p>
+        <a href='/logout' class="textcolor">Logout</a> <p class="textcolor">or make a Transaction <a href='/transact' class="textcolor">here</a></p>
+    {% else %}
+        <p class="textcolor">You are not signed in. <a href='/login' class="textcolor">Login</a> or <a href='/register' class="textcolor">Register</a>.</p>
+    {% endif %}
+    <p class="bottom-right">© 2024 Elsalhy. Co. All rights reserved.</p>
+</body>
+</html>
+
