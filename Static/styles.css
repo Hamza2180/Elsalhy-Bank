@@ -1,0 +1,22 @@
+
+.textcolor {
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.background {
+    background-color: #001F3F;
+    position: relative;
+}
+
+.primary {
+    text-align: center;
+    color: #FFD700;
+}
+
+  .bottom-right {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
